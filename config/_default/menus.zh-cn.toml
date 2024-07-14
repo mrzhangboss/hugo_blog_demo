@@ -1,0 +1,145 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+[[main]]
+  name = "🗼"
+  pageRef = "roadmap"
+  weight = 1
+
+[[main]]
+  name = "设计"
+  pageRef = "posts/design"
+  weight = 10
+
+[[main]]
+  name = "构图"
+  parent = "设计"
+  pageRef = "posts/design/composition"
+  weight = 11
+
+[[main]]
+  name = "插画"
+  parent = "设计"
+  pageRef = "posts/design/illustration"
+  weight = 12
+
+[[main]]
+  name = "前端"
+  pageRef = "posts/frontend"
+  weight = 20
+
+[[main]]
+  name = "布局"
+  parent = "前端"
+  pageRef = "posts/frontend/layout"
+  weight = 11
+
+[[main]]
+  name = "动画"
+  parent = "前端"
+  pageRef = "posts/frontend/animation"
+  weight = 12
+
+[[main]]
+  name = "后端"
+  pageRef = "posts/backend"
+  weight = 30
+
+[[main]]
+  name = "网络"
+  parent = "后端"
+  pageRef = "posts/backend/network"
+  weight = 11
+
+[[main]]
+  name = "数据库"
+  parent = "后端"
+  pageRef = "posts/backend/database"
+  weight = 12
+
+
+[[main]]
+  name = "中间件"
+  parent = "后端"
+  pageRef = "posts/backend/middleware"
+  weight = 13
+
+[[main]]
+  name = "AI"
+  parent = "后端"
+  pageRef = "posts/backend/ai"
+  weight = 14
+
+[[main]]
+  name = "随笔"
+  pageRef = "posts/essays"
+  weight = 40
+
+[[main]]
+  name = "编程"
+  parent = "随笔"
+  pageRef = "posts/essays/programming"
+  weight = 11
+
+[[main]]
+  name = "人生"
+  parent = "随笔"
+  pageRef = "posts/essays/life"
+  weight = 12
+
+[[main]]
+  name = "关于"
+  pageRef = "about"
+  weight = 100
+
+#[[main]]
+#  name = "Test"
+#  pageRef = "pagTest"
+#  weight = 1000
+
+[[main]]
+  identifier = "rss"
+  pre = "rss"
+  url = "/index.xml"
+  weight = 200
+
+#[[main]]
+#  identifier = "mastodon"
+#  pre = "mastodon"
+#  weight = 300
+#  url = "https://masto.ai/@blowfish"
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/nunocoracao/blowfish"
+  weight = 400
+
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+
+ [[footer]]
+   name = "标签"
+   pageRef = "tags"
+   weight = 10
+
+ [[footer]]
+   name = "分类"
+   pageRef = "categories"
+   weight = 20
+
+ [[footer]]
+   name = "系列"
+   pageRef = "series"
+   weight = 30

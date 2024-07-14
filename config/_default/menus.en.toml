@@ -1,0 +1,140 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+[[main]]
+  name = "🗼"
+  pageRef = "roadmap"
+  weight = 1
+
+[[main]]
+  name = "Design"
+  pageRef = "posts/design"
+  weight = 10
+
+[[main]]
+  name = "Composition"
+  parent = "Design"
+  pageRef = "posts/design/composition"
+  weight = 11
+
+[[main]]
+  name = "Illustration"
+  parent = "Design"
+  pageRef = "posts/design/illustration"
+  weight = 12
+
+[[main]]
+  name = "Frontend"
+  pageRef = "posts/frontend"
+  weight = 20
+
+[[main]]
+  name = "Layout"
+  parent = "Frontend"
+  pageRef = "posts/frontend/layout"
+  weight = 11
+
+[[main]]
+  name = "Animation"
+  parent = "Frontend"
+  pageRef = "posts/frontend/animation"
+  weight = 12
+
+[[main]]
+  name = "Backend"
+  pageRef = "posts/backend"
+  weight = 30
+
+[[main]]
+  name = "Network"
+  parent = "Backend"
+  pageRef = "posts/backend/network"
+  weight = 11
+
+[[main]]
+  name = "Database"
+  parent = "Backend"
+  pageRef = "posts/backend/database"
+  weight = 12
+
+
+[[main]]
+  name = "Middleware"
+  parent = "Backend"
+  pageRef = "posts/backend/middleware"
+  weight = 13
+
+[[main]]
+  name = "AI"
+  parent = "Backend"
+  pageRef = "posts/backend/ai"
+  weight = 14
+
+[[main]]
+  name = "Essays"
+  pageRef = "posts/essays"
+  weight = 40
+
+[[main]]
+  name = "Programming"
+  parent = "Essays"
+  pageRef = "posts/essays/programming"
+  weight = 11
+
+[[main]]
+  name = "Life"
+  parent = "Essays"
+  pageRef = "posts/essays/life"
+  weight = 12
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 100
+
+#[[main]]
+#  name = "Test"
+#  pageRef = "pagTest"
+#  weight = 1000
+
+[[main]]
+  identifier = "twitter"
+  pre = "x-twitter"
+  url = "https://twitter.com/burufugu"
+  weight = 200
+
+#[[main]]
+#  identifier = "mastodon"
+#  pre = "mastodon"
+#  weight = 300
+#  url = "https://masto.ai/@blowfish"
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/nunocoracao/blowfish"
+  weight = 400
+
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+
+ [[footer]]
+   name = "Tags"
+   pageRef = "tags"
+   weight = 10
+
+ [[footer]]
+   name = "Authors"
+   pageRef = "authors"
+   weight = 20
