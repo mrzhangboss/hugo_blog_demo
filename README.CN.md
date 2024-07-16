@@ -48,6 +48,12 @@ git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blo
 
 
 修改配置项目：
+[deploy.yml](.github%2Fworkflows%2Fdeploy.yml)
+
+external_repository: username/username.github.io
+cname: username.github.io
+
+修改为你自己的用户名
 
 config/_default/hugo.toml
 
@@ -79,6 +85,12 @@ baseURL = "https://{username}.github.io/"
 
 2. 将 [params.toml](config/_default/params.toml) 文件中 showComments = true
 每篇文字头上添加 showComments: true
+
+## 可选：支持私有域名
+假如你有自己的私有域名：
+修改[deploy.yml](.github%2Fworkflows%2Fdeploy.yml)  将cname 改成你的域名
+
+cname: github.com
 
 # 2.写博客
 
