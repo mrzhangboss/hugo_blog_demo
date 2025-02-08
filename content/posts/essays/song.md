@@ -1,6 +1,7 @@
 ---
 title: song
 date: 2024-02-08
+slug: song.md
 tags:
   - 标签
 categories:
