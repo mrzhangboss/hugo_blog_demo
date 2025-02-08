@@ -1,7 +1,6 @@
 ---
-title: 测试发布2
+title: song
 date: 2024-02-08
-slug: blog-post-slug
 tags:
   - 标签
 categories:
