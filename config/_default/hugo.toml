@@ -13,7 +13,7 @@ enableRobotsTXT = true
 paginate = 100
 summaryLength = 30
 hasCJKLanguage = true
-uglyURLs = false
+uglyURLs = true
 
 buildDrafts = false
 buildFuture = false
