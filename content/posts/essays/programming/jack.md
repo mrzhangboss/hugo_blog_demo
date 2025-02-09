@@ -1,5 +1,5 @@
 ---
-title: 测试发布
+title: jack
 date: 2024-02-08
 tags:
   - 标签
@@ -11,9 +11,3 @@ cover.image: https://jacob-1256058189.cos.ap-guangzhou.myqcloud.com/md/2024/08/d
 draft: false
 share: true
 ---
-  
-从这里开始撰写正文……1434  
-  
-## 参考文献  
-  
-- 参考文献 1  
